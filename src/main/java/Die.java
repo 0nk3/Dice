@@ -1,31 +1,50 @@
 import java.util.Random;
 
-public class Die {
-    public static void main(String[] args) {
-        Die die6 = new Die(6);
-        die6.roll();
-        Die die20 = new Die(20);
-        die20.roll();
-        System.out.println(die6.value);
-        System.out.println(die20.value);
+class Die {
 
-    }
     private int sides;
-    private int value;
+    int value;
+    private int[] probabilities;
+    private Random random = new Random();
 
-    public Die(int sides) {
+
+    // fair die
+    Die(int sides) {
         this.sides = sides;
     }
-//    public void setSides(int sides) {
-//        if(sides > 1){
-//            this.sides = sides;
-//        }else {
-//            throw new IllegalArgumentException("Sides should be greater than 1");
-//        }
-//    }
+    // weighted die
+    Die(int sides, int[] probabilities){
+        this.sides = sides;
+        this.probabilities = probabilities;
+    }
+    void roll() throws Exception {
+        // do the checking for throwing exceptions and potentially find the cumulative sum of expected values
 
-    public void roll(){
-        Random random = new Random();
-        value = Math.abs(random.nextInt()%sides) + 1;
+        int sumProbabilities = 0;
+        for (int P : this.probabilities) {
+            sumProbabilities += P;
+            if (P < 0) {
+                throw new Exception("Negative Probabilities not allowed");
+            }
+            if (sumProbabilities < 1) {
+                throw new Exception("Probability sum must be greater than 0");
+            }
+            if (sides < 1) {
+                throw new IllegalArgumentException("Sides should be greater than 1");
+            }
+
+            value =  Math.abs(random.nextInt() % sumProbabilities +1);
+            for (int i = 0; i < this.sides; i++) {
+                value -= probabilities[i];
+                if(value <= 0){
+                    setProbabilityBasedValue(i + 1);
+                    return;
+                }
+            }
+
+        }
+    }
+    private void setProbabilityBasedValue(int number){
+        this.value = number;
     }
 }

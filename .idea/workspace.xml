@@ -9,11 +9,12 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Die.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Die.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Driver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Die.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Die6.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Die6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/DieFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/DieFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DieDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DieDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DieFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DieFactory.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,9 +56,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Driver">
+  <component name="RunManager" selected="Application.DieDriver">
     <configuration name="Die" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Die" />
+      <module name="untitled.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DieDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DieDriver" />
       <module name="untitled.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -72,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DieDriver" />
         <item itemvalue="Application.Driver" />
         <item itemvalue="Application.Die" />
       </list>

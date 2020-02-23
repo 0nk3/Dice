@@ -14,5 +14,8 @@ public class DieDriver {
         Die dieDodgy6 = new Die(6, new int[]{1,1,1,1,1,2});
         dieDodgy6.roll();
         System.out.println(dieDodgy6.value);
+
+        Dice die20 = DieFactory.makeDie(20);
+        Dice anotherDie20 = DieFactory.makeDie(20);
     }
 }

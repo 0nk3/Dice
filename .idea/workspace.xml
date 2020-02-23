@@ -11,7 +11,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Die.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Die.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Driver.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Driver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Die.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Driver.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

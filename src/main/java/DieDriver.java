@@ -11,9 +11,11 @@ public class DieDriver {
 
         // part 2 loaded die
         System.out.println("======= > Loaded Die < ===========");
-        Die dieDodgy6 = new Die(6, new int[]{1,1,1,1,1,2});
-        dieDodgy6.roll();
-        System.out.println(dieDodgy6.value);
+        Die dieDodgy6 = new Die(6, new int[]{1,1,100,1,1,100});
+        for (int i = 0; i < 100; i++) {
+            dieDodgy6.roll();
+            System.out.println(dieDodgy6.value);
+        }
 
         Dice die20 = DieFactory.makeDie(20);
         Dice anotherDie20 = DieFactory.makeDie(20);

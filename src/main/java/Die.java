@@ -37,14 +37,15 @@ class Die {
         // generating numbers with a built in statistical bias
         int index = 0;
         for (int p: probabilities) {
+            index++;
             value -= p;
             if(value <= 0){
-                setProbabilities(++index);
+                setProbabilities(index);
+                return;
             }
         }
     }
     private void setProbabilities(int initialValue){
         value = initialValue;
     }
-
 }
